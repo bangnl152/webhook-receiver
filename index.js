@@ -23,7 +23,7 @@ app.post('/webhook', (req, res) => {
 });
 
 app.post('/webhook-failed', (req, res) => {
-  // We will be coding here
+  res.status(400).send('Failed');
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
